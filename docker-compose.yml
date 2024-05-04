@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  admin_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile_admin_bot
+    restart: always
+    volumes:
+      - ./admin_bot:/app
+    environment:
+      - TELEGRAM_BOT_TOKEN=YOUR_ADMIN_BOT_TOKEN
+
+  user_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile_user_bot
+    restart: always
+    volumes:
+      - ./user_bot:/app
+    environment:
+      - TELEGRAM_BOT_TOKEN=YOUR_USER_BOT_TOKEN

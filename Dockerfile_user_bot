@@ -1,0 +1,15 @@
+## Используем официальный образ Python
+FROM python:3.9
+ #
+ ## Установка зависимостей
+RUN pip install aiogram==2.12.3
+ #
+ ## Копируем файлы бота в контейнер
+COPY user_bot.py /app/
+COPY database.py /app/
+ #
+ ## Указываем рабочую директорию
+WORKDIR /app
+ #
+ ## Команда для запуска бота
+CMD ["python", "user_bot.py"]
