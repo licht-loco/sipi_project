@@ -1,0 +1,9 @@
+schedule_bot
+============
+
+Модуль для запуска Telegram бота для управления расписанием.
+
+.. automodule:: schedule_bot
+   :members:
+   :undoc-members:
+   :show-inheritance:

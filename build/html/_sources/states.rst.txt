@@ -1,0 +1,9 @@
+states
+======
+
+Модуль, содержащий состояния для обработки команд пользователя.
+
+.. automodule:: states
+   :members:
+   :undoc-members:
+   :show-inheritance:
