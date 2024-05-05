@@ -4,7 +4,7 @@ from aiogram.types import ParseMode
 from aiogram.utils import executor
 from database import get_schedule
 
-API_TOKEN = '7093253206:AAEm4rguSLwJ7hq-5gFhlpnS6QnDhuOlLts'
+API_TOKEN = ''
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 dp.middleware.setup(LoggingMiddleware())
